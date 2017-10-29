@@ -22,7 +22,7 @@ class Items extends Migration
             $table->string('description');
             $table->string('price');
             $table->string('image');
-            $table->rememberToken();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
